@@ -1,13 +1,15 @@
 @import "~normalize.css";
-
-@import "_variables";
 @import "modules/hello.scss";
+@import "modules/hello-section.scss";
 
-body {
-  background: $wtf;
-  color: #fff;
+body {  
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  flex-direction: column;
+}
+
+html{
+  box-sizing: border-box;
 }
