@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+
+@media screen and (max-width: 320px) {
+  .skills-section {
+    background: #1070ca;
+    width: 100%;
+    &__main {
+      padding: 64px 16px 22px 16px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      color: #fff;
+      margin-bottom: 64px;
+    }
+    &__list {
+      list-style-type: none;
+      margin: 0 0 64px 0;
+      padding-inline-start: 0;
+      width: 100%;
+      &-icon {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 72px;
+        margin: 0 0 16px 0;
+      }
+      &-title {
+        color: #fff;
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 44px;
+        margin: 0 0 24px 0;
+      }
+      &-item {
+        font-family: "Nunito", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 24px;
+        color: #dbeaf7;
+        &::before {
+          content: "\2713";
+          color: #06c847;
+          width: 12px;
+          height: 9px;
+          margin-right: 12px;
+        }
+        &--white-tick {
+          font-family: "Nunito", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #dbeaf7;
+          &::before {
+            content: "\2713";
+            color: #dbeaf7;
+            width: 12px;
+            height: 9px;
+            margin-right: 12px;
+          }
+        }
+        &--bullet {
+          font-family: "Nunito", sans-serif;
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 24px;
+          color: #dbeaf7;
+          &::before {
+            content: "\2022";
+            color: #dbeaf7;
+            width: 2px;
+            height: 2px;
+            margin-right: 17px;
+          }
+        }
+      }
+    }
+  }
+}
