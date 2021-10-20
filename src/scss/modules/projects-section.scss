@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .projects-section {
+    background: #fff;
+    width: 100%;
+    &__main {
+      padding: 64px 16px 88px 16px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 48px;
+      text-align: center;
+      color: #234361;
+      margin: 0 0 32px;
+    }
+    &__description {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+      color: #425a70;
+      margin: 0 0 46px;
+    }
+    &__item {
+      width: 100%;      
+      &-header {
+        height: 40px;
+        background: #1e1e1e;
+        border-radius: 16px 16px 0 0;
+        &-circles {
+          width: 40px;
+          padding-left: 16px;          
+        }
+      }
+      &-description {
+        height: 280px;
+        background: #212528;
+        border-radius: 0 0 16px 16px;
+        &-github-icon{
+            height: 24px;
+            width: 24px;
+            margin: 24px auto 24px 16px;
+        }
+        &-main{
+            color: #fff;
+        }
+        &-links{
+            color: #fff;
+        }
+      }
+    }
+  }
+}

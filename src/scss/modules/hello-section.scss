@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 768px) {
   .hello-section {
     padding: 64px 16px 88px 16px;
     &__article {
