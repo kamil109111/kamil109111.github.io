@@ -3,13 +3,27 @@
 .skills {
   background: #1070ca;
   width: 100%;
+  padding: 64px 16px 22px 16px;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  @media (min-width: $desktop) {
+    padding: 80px 128px 112px 128px;
+  }
   &__main {
-    padding: 64px 16px 22px 16px;
     display: flex;
     flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    @media (min-width: $desktop) {
+      flex-direction: row;
+    }
+  }
+  &__columns{
+    display: flex;
+    flex-direction: column;    
     align-items: center;
+    @media (min-width: $desktop) {
+      width: 379px;
+    }    
   }
   &__title {
     font-family: "Nunito", sans-serif;
@@ -19,12 +33,18 @@
     line-height: 48px;
     color: #fff;
     margin-bottom: 64px;
+    @media (min-width: $desktop) {
+      margin-bottom: 128px;
+    }
   }
-  &__list {
+  &__list {    
     list-style-type: none;
     margin: 0 0 64px 0;
     padding-inline-start: 0;
     width: 288px;
+    @media (min-width: $desktop) {
+      width: auto;
+    }
     &-icon {
       font-style: normal;
       font-weight: bold;
