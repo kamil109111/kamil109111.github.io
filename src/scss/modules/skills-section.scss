@@ -21,7 +21,10 @@
     display: flex;
     flex-direction: column;    
     align-items: center;
-    @media (min-width: $desktop) {
+    @media (min-width: 960px) {
+      width: 300px;
+    }
+    @media (min-width: 1440px) {
       width: 379px;
     }    
   }

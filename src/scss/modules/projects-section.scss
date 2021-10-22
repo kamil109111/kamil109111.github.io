@@ -4,8 +4,11 @@
 .projects {
   background: #fff;
   width: 100%;
+  padding: 64px 16px 88px 16px;
+  @media (min-width: $desktop) {
+    padding: 80px 128px 176px 128px;
+  }
   &__main {
-    padding: 64px 16px 88px 16px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -21,6 +24,11 @@
     text-align: center;
     color: #234361;
     margin: 0 0 32px;
+    @media (min-width: $desktop) {
+      font-size: 48px;
+      line-height: 56px;
+      margin: 0 0 40px;
+    }
   }
   &__description {
     font-family: "Nunito", sans-serif;
@@ -31,6 +39,12 @@
     text-align: center;
     color: #425a70;
     margin: 0 0 46px;
+    max-width: 782px;
+    @media (min-width: $desktop) {
+      font-size: 20px;
+      line-height: 40px;
+      margin: 0 0 128px;
+    }
   }
 }
 
