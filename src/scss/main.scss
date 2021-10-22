@@ -1,18 +1,16 @@
 @import "~normalize.css";
-@import "modules/hello.scss";
-@import "modules/hello-section.scss";
+@import "modules/_variables.scss";
+@import "modules/hero-section.scss";
 @import "modules/skills-section.scss";
 @import "modules/projects-section.scss";
 @import "modules/contact-section.scss";
 
-body {  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  flex-direction: column;
-}
-
-html{
+html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }

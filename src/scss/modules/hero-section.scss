@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
+
+.hero {
+  padding: 64px 16px 88px 16px;
+  @media (min-width: $desktop) {
+    padding: 80px 0 176px;
+    display: flex;
+    justify-content: center;
+  }
+  &__article {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    max-width: 982px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-end;
+    position: relative;
+    width: 212px;
+    margin-bottom: 24px;
+  }
+  &__image {
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+    border: 16px solid #f6f9fd;
+    margin-top: 18px;
+    @media (min-width: $desktop) {
+      display: block;
+      width: 178px;
+      height: 178px;
+      border: 24px solid #f6f9fd;
+      margin-top: 50px;
+    }
+  }
+  &__cloud {
+    display: none;
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 0px;
+      left: 178px;
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      color: #fff;
+      line-height: 40px;
+      padding: 16px 19px;
+      display: block;
+      width: 225px;
+      height: 94.66px;
+      background: url("/src/assets/icons/Speech_cloud.svg");
+    }
+  }
+  &__description {
+    margin-bottom: 68px;
+    @media (min-width: $desktop) {
+      max-width: 830px;
+      position: relative;
+      &::before, &::after {
+        width: 82.94px;
+        height: 254.88px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+      }
+      &::before {        
+        background: url("/src/assets/icons/{.svg");
+        right: 100%;
+      }
+      &::after {        
+        background: url("/src/assets/icons/}.svg");
+        left: 100%;
+      }
+    }
+    &-title {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 32px;
+      margin-top: 0;
+      margin-bottom: 16px;
+      text-align: center;
+      color: #234361;
+      &--special {
+        color: #1070ca;
+      }
+      @media (min-width: $desktop) {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 24px;
+      }
+    }
+    &-text {
+      font-family: "Nunito", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+      text-align: center;
+      color: #425a70;
+      margin: 0;
+      &--special {
+        color: #4da8ff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      @media (min-width: $desktop) {
+        font-size: 20px;
+        line-height: 40px;
+      }
+    }
+  }
+  &__button {
+    padding: 4px 24px;
+    background: #4da8ff;
+    color: #fff;
+    border-radius: 64px;
+    width: 278px;
+    height: 48px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 40px;
+    border: none;
+  }
+}
