@@ -71,6 +71,8 @@
       font-size: 16px;
       line-height: 24px;
       color: #dbeaf7;
+      margin-bottom: 16px;     
+      
       &:before {
         margin-right: 12px;
         left: 0;
@@ -79,7 +81,7 @@
         content: "";
         width: 12px;
         height: 9px;
-        background: url("/src/assets/icons/small-tick-green.svg");
+        background: url("../assets/icons/small-tick-green.svg");
       }
       &--white-tick {
         font-family: "Nunito", sans-serif;
@@ -88,6 +90,7 @@
         font-size: 16px;
         line-height: 24px;
         color: #dbeaf7;
+        margin-bottom: 16px; 
         &:before {
           margin-right: 12px;
           left: 0;
@@ -96,7 +99,7 @@
           content: "";
           width: 12px;
           height: 9px;
-          background: url("/src/assets/icons/small-tick.svg");
+          background: url("../assets/icons/small-tick.svg");
         }
       }
       &--bullet {
@@ -106,6 +109,7 @@
         font-size: 16px;
         line-height: 24px;
         color: #dbeaf7;
+        margin-bottom: 16px; 
         &:before {
           margin-right: 17px;
           left: 0;
@@ -114,7 +118,7 @@
           content: "";
           width: 2px;
           height: 2px;
-          background: url("/src/assets/icons/bullet.svg");
+          background: url("../assets/icons/bullet.svg");
         }
       }
     }

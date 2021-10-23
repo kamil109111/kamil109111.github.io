@@ -55,7 +55,7 @@
       display: block;
       width: 225px;
       height: 94.66px;
-      background: url("/src/assets/icons/Speech_cloud.svg");
+      background: url("../assets/icons/Speech_cloud.svg");
     }
   }
   &__description {
@@ -72,11 +72,11 @@
         top: 0;
       }
       &::before {        
-        background: url("/src/assets/icons/{.svg");
+        background: url("../assets/icons/{.svg");
         right: 100%;
       }
       &::after {        
-        background: url("/src/assets/icons/}.svg");
+        background: url("../assets/icons/}.svg");
         left: 100%;
       }
     }
